@@ -1,0 +1,30 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkcyan;
+}
+
+p {
+  background-color: yellowgreen;
+}
+
+p.box_properties {
+  background-color: #d4f0f8;
+  border: 2px solid #2db7e1;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  padding: 1.5em;
+  width: 480px;
+}
+
+p.box_property {
+  background-color: #d4f0f8;
+  border: 1px solid #2db7e1;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  width: 780px;
+}
+
+li {
+  background-color: violet;
+}
