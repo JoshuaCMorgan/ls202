@@ -8,8 +8,8 @@ p {
 }
 
 em {
-  background-color: rgba(255, 255, 0, .5);
-  border: 30px solid rgba(255, 0, 64, .5);
+  background-color: rgba(255, 255, 0, 0.5);
+  border: 30px solid rgba(255, 0, 64, 0.5);
   margin: 40px;
   padding: 30px;
 }
