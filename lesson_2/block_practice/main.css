@@ -1,5 +1,4 @@
 div.image {
-
   background-color: lightgray;
   border: 1px solid black;
   box-sizing: border-box;
@@ -19,6 +18,7 @@ img {
 }
 
 div.section {
+  width: 580px;
   background-color: lightgray;
   border: 1px solid black;
   box-sizing: border-box;
@@ -53,6 +53,54 @@ em {
   display: inline;
   height: 300px;
   margin: 20px 19px 10px 11px;
+  padding: 10px 30px;
+  width: 500px;
+}
+
+div.article {
+  background-color: lightgray;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  border: 4px solid red;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 300px;
+  margin: 20px 19px 10px 11px;
   padding: 10px 20px;
   width: 500px;
+}
+
+div.final {
+  background-color: lightgray;
+  border: 1px solid black;
+  box-sizing: content-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 720px;
+}
+
+strong,
+div.final > em {
+  box-sizing: border-box;
+  height: 240px;
+  margin: 0;
+  padding: 0;
+  width: 360px;
+}
+
+strong {
+  background-color: yellow;
+  display: inline-block;
+}
+
+div.final > em {
+  background-color: lime;
+  display: inline;
 }
