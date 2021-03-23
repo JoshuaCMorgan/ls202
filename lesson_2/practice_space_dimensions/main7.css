@@ -1,0 +1,30 @@
+body {
+  
+}
+
+p {
+  border: black;
+}
+ul {
+  background-color: #a7ceff;
+  border: 10px solid blue;
+  list-style:none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffc;
+  border: 10px solid red;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 120px;
+  min-height: 120px;
+  text-align: center;
+  width: 23%;
+  margin: 0% 1%;
+  
+}
+
+header {
+  text-align: center;
+}

@@ -4,7 +4,9 @@ h1 {
 }
 
 p {
-  background-color: yellowgreen;
+  background-color: rgb(205, 112, 50);
+  border: 2px solid black;
+  padding: 3px;
 }
 
 p.box_properties {

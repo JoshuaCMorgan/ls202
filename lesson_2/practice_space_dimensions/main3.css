@@ -1,0 +1,7 @@
+img {
+  width: 100%;
+  max-width: 800px;
+  min-width: 600px;
+  display: block;
+  margin: 0 auto;  /* 0: top and bottom margin, auto: left and right */
+}

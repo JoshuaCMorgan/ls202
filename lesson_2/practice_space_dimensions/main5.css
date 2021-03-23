@@ -1,0 +1,18 @@
+/* When set to border-box, the browser includes both padding and borders as part of the total dimensions. */
+/* remove box-sizing to see what happens*/
+div {
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+}
+
+/* look at rendering with and without padding */
+.red {
+  background-color: #fcc;
+  padding: 20px;
+}
+
+.blue {
+  background-color: #ccf;
+  border: 5px solid black;
+}
