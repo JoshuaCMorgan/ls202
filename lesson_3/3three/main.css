@@ -1,0 +1,35 @@
+body, main, figure, figcaption, img {
+  margin: 0;
+  padding: 0px;
+}
+
+body {
+  background-image: url(https://d3jtzah944tvom.cloudfront.net/202/images/lesson_3/gradient-background.png);
+  background-size: cover;
+}
+
+figure {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 50px 0px;
+  padding: 0 50px;
+  width: 50%;
+}
+
+img {
+  width: 100%;
+}
+
+figcaption {
+  text-align: center;
+}
+
+
+/* To place images side by side, this is an alternative to placing html figure tags side by side or adding the html comment marks between figure tags.
+main {
+  font-size: 0;
+}
+
+figcaption {
+  font-size: 1rem;
+} */

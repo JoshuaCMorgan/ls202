@@ -1,0 +1,16 @@
+body, main, figure, figcaption, img {
+  margin: 0;
+  padding: 0px;
+}
+
+/* Reduce the width of each figure to 1/2 the width of the browser window: */
+figure {
+  margin: 50px;
+  outline: 1px solid red;
+  width: 50%;
+}
+/* Every image should use the entire width of the figure elements. */
+img {
+  width: 100%;
+}
+

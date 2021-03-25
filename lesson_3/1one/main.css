@@ -1,0 +1,13 @@
+body, main, figure, figcaption, img {
+  margin: 0;
+  padding: 0px;
+}
+
+figure {
+  margin: 50px;
+  outline: 1px solid red;
+}
+/* adjust the CSS to make them all fit inside the window. Don't forget that there is a margin around each figure, which should be evident when you display the page. */
+img {
+  max-width: 100%;
+}
