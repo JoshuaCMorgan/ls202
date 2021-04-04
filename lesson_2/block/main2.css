@@ -1,11 +1,7 @@
-
-
 .parent {
   width: 50%;
   border: 5px solid #E18728;
   float: left;
-  /* box-sizing: content-box;
-  box-sizing: border-box; */
 }
 
 .child {
@@ -13,6 +9,8 @@
   padding: 20%;
   border: 4px solid black;
   margin: .5em auto;
+  box-sizing: border-box;
+  font-size: 1.5rem;
 }
 
 .twins {
@@ -20,4 +18,6 @@
   padding: 1em;
   border: 4px solid black;
   float: left;
+  box-sizing: border-box;
+  font-size: 1.5rem;
 }
