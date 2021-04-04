@@ -1,7 +1,7 @@
 nav ul {
   background-color: powderblue;
   list-style-type: none;
-  padding-left: 0; /*removes browser default spacing settings */
+  padding-left: 0; 
   font-size: 0;
   width: 100%; 
 }
@@ -11,7 +11,9 @@ nav li {
   color: blue;
   font-size: 1.25rem;
   text-align: center;
-  width: 25%
+  width: 25%;
+  box-sizing: border-box;
+  border: 1px solid red;
 }
 
 nav a {
