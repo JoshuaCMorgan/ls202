@@ -1,0 +1,28 @@
+* {
+  outline: 1px solid red;
+}
+li, dd, dt {
+  font-size: 1.25rem;
+}
+
+.red, .green, .blue {
+  width: 50px;
+  height: 25px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+dt {
+  text-decoration: underline;
+  text-decoration-color: chartreuse;
+}
