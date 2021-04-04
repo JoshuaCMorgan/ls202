@@ -1,22 +1,23 @@
 nav ul {
   background-color: powderblue;
   list-style-type: none;
-  padding-left: none;
   width: 200px;
+  padding-left: 0;
 }
 
 nav li {
-  color: blue;
   font-size: 1.25rem;
+  color: blue;
 }
 
 nav a {
+  border: 1px solid yellow;
   box-sizing: border-box;
   color: blue;
   display: inline-block;
   line-height: 2.5;
-  padding: 0 10px;
-  text-decoration: none;
+  padding-left: 10px;
+  text-decoration-line: none;
   width: 100%;
 }
 
