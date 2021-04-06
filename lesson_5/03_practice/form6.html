@@ -7,10 +7,10 @@
   </head>
 
   <body>
-    <form>
+    <form action="#" method="get">
       <fieldset>
         <dl>
-          <dt><label name="category">Categories</label></dt>
+          <dt><label for="category">Categories</label></dt>
           <dd>
             <select name="category" id="category" size="5">
               <option value="core">Core</option>
@@ -25,18 +25,19 @@
           <dt><label for="tag">Tags</label></dt>
           <dd>
             <select name="tag" id="tag" size="5" multiple>
-              <option>HTML</option>
-              <option>CSS</option>
-              <option>Javascript</option>
-              <option>Ruby</option>
-              <option>Rails</option>
-              <option>Python</option>
-              <option>Django</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="javascript">Javascript</option>
+              <option value="ruby">Ruby</option>
+              <option value="rails">Rails</option>
+              <option value="python">Python</option>
+              <option value="django">Django</option>
             </select>
           </dd>
       </dl>
 
-      <button type="button" value="filter">Filter</button>
+      <!-- <button type="button" value="filter">Filter</button> -->
+      <input type="submit" value="Filter" />
       </fieldset>
     </form>
   </body>
