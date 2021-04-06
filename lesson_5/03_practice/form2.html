@@ -29,7 +29,21 @@
     
           <dt><label for="phone">Phone Number</label></dt>
           <dd>
-            <input type="tel" name="phone" id="phone" required />
+            <input type="tel" name="phone" id="phone" placeholder="(###)###-####"required />
+          </dd>
+          <dd>
+            <select name="phone_type" id="phone_type">
+              <option value="business">Business</option>
+              <option value="home"selected>Home</option>
+              <option value="mobile">Mobile</option>
+            </select>
+          </dd>
+
+          <dt>
+            <label for="message">Comment</label>
+          </dt>
+          <dd>
+            <textarea id="message" name="message" rows="6" cols="80" placeholder="This text area lets the user enter an optional multi-line message. The message box allows around six lines of text of up to about 80-characters each."></textarea>
           </dd>
         </dl>
     
