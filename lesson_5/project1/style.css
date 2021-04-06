@@ -1,0 +1,55 @@
+* {
+  outline: 1px solid red;
+}
+form {
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+fieldset  {
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 600px;
+}
+input[type="text"],
+input[type="email"] {
+  height: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid #cecece;
+  box-sizing: border-box;
+  font: normal 14px Helvetica, Arial, sans-serif;
+  padding: 3px 10px;
+  width: 100%;
+}
+
+textarea {
+  height: auto;
+  resize: vertical;
+}
+
+dt {
+  margin-bottom: 5px;
+}
+dd {
+  margin: 0 0 25px 0;
+}
+
+ul dl  {
+  margin: 0;
+}
+
+dt {
+  margin-bottom: 5px; 
+}
+
+
+ul {
+  font-size: 14px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
