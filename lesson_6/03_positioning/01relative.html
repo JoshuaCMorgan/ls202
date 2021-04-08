@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <style>
+    section {
+      border: 1px solid grey;
+      padding: 70px 10px;
+    }
+
+    * {
+      outline: 1px solid red;
+    }
+
+    aside {
+      border: 1px solid black;
+      display: inline-block;
+      height: 100px;
+      line-height: 100px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      width: 100px;
+    }
+
+    .normal {
+      background-color: yellow;
+    }
+
+    .shifted {
+      position: relative;
+    }
+    
+    /* demonstates top vertifcal offset */
+    .pos {
+      background-color: cyan;
+      top: 60px;
+    }
+
+    .neg {
+      background-color: lightgreen;
+      top: -60px;
+    }
+  </style>
+
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <section>
+      <aside class="normal">normal</aside>
+      <aside class="shifted pos">top</aside>
+      <aside class="shifted neg">-top</aside>
+      <aside class="normal">normal</aside>
+    </section>
+  </body>
+
+</html>

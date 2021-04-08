@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <style>
+    section {
+      border: 1px solid grey;
+      padding: 70px 10px;
+    }
+
+    * {
+      outline: 1px solid red;
+    }
+
+    aside {
+      border: 1px solid black;
+      display: inline-block;
+      height: 100px;
+      line-height: 100px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      width: 100px;
+    }
+
+    .normal {
+      background-color: yellow;
+    }
+
+    .shifted {
+      position: relative;
+    }
+    /* demonstates right horizontal offset */
+    /* browser shifts the element inward from the right edge from where the browswer would place it otherwise */
+    .pos {
+      background-color: cyan;
+      right: 60px;
+    }
+
+    /* browser shifts the element outward from the left edge from where the browswer would place it otherwise */
+    .neg {
+      background-color: lightgreen;
+      right: -80px;
+    }
+  </style>
+
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <section>
+      <aside class="normal">normal</aside>
+      <aside class="shifted pos">right</aside>
+      <aside class="shifted neg">-right</aside>
+      <aside class="normal">normal</aside>
+    </section>
+  </body>
+
+</html>
