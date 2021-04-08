@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    section {
+      border: 2px solid grey;
+      padding: 10px 10px 60px;
+      width: 780px;
+      background-color: burlywood;
+    }
+
+    aside {
+      border: 1px solid black;
+      display: inline-block;
+    }
+
+    .relative {
+      background-color: yellow;
+      height: 200px;
+      left: 0;
+      margin: 0 25px;
+      position: relative;
+      top: 0;
+      width: 200px;
+    }
+
+    .absolute-1 {
+      background-color: lightgreen;
+      bottom: 33%;
+      left: 33%;
+      position: absolute;
+      right: 33%;
+      top: 33%;
+    }
+
+    .absolute-2 {
+      background-color: cyan;
+      bottom: 150px;
+      left: 0;
+      position: absolute;
+      right: 20px;
+      top: 0;
+    }
+
+    .absolute-3 {
+      background-color: pink;
+      bottom: -50px;
+      left: 100px;
+      position: absolute;
+      right: -40px;
+      top: 150px;
+    }
+  </style>
+
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <section>
+      <aside class="relative">
+        <div class="absolute-1"></div>
+      </aside>
+      <aside class="relative">
+        <div class="absolute-2"></div>
+      </aside>
+      <aside class="relative">
+        <div class="absolute-3"></div>
+      </aside>
+    </section>
+  </body>
+</html>
