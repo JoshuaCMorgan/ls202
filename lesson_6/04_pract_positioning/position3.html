@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <style>
+    /* this centers the element.  */
+    /* it's left edge is set inward at 50%  point of container.  */
+    /* Since it takes up 400px in width, we move it left 1/2, which is 200px  */
+    #positioned {
+      background-color: #ffc;
+      box-sizing: border-box;
+      padding: 30px 15px;
+      position: fixed;
+      top: 0;
+      left: 50%;
+      margin-top: 20px;
+      margin-left: -200px;
+      width: 400px;
+      text-align: center;
+      z-index: 2;
+    }
+    
+    #positioned span {
+      background-color: pink;
+      height: 20px;
+      left: -10px;
+      position: absolute;
+      top: -10px;
+      width: 20px;
+    }
+
+    p {
+      font-size: 2rem;
+      margin: 1.5rem;
+    }
+
+    #fixed {
+      background-color: rgba(0, 0, 0, .6);
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+  </style>
+
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper lorem vel nulla faucibus iaculis. Praesent tincidunt sagittis bibendum. Morbi lectus est, aliquet sit amet maximus a, efficitur quis tortor. Praesent commodo bibendum lobortis. Quisque pretium, quam ac varius euismod, est erat dapibus justo, sed euismod mauris eros ac orci. Nunc dictum maximus lacus feugiat luctus. Integer ut sapien felis. Ut elementum mi lacus. Maecenas id purus ultrices, blandit ex ac, interdum risus. Aenean semper cursus mollis. Maecenas ex eros, dictum at ex id, laoreet venenatis nisi. Curabitur condimentum quam tincidunt tempus convallis. Vestibulum at condimentum augue, vitae lacinia nisi. Morbi pharetra tellus eget erat vehicula egestas ac quis risus. Ut vel ullamcorper orci.
+      </p>
+      <p>
+        Sed dictum faucibus mi at imperdiet. Praesent ut auctor lorem. Nam non diam in odio accumsan sagittis. Integer vestibulum turpis neque, sit amet ullamcorper orci bibendum nec. Phasellus ac venenatis nisi. Vestibulum eget est erat. Nullam iaculis condimentum lacinia. Curabitur ut sodales augue, a sollicitudin nisi. Morbi at lectus massa. Duis facilisis velit ac egestas semper. Etiam eget augue vel dui imperdiet bibendum.
+      </p>
+      <p>
+        Curabitur tincidunt ipsum mattis commodo suscipit. Phasellus at libero est. Vivamus purus ante, tristique sit amet diam eget, suscipit tempor quam. Curabitur consectetur tellus id blandit venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut mauris augue, mattis ut imperdiet quis, convallis id neque. Nulla ultrices tincidunt nisl, accumsan ullamcorper quam sagittis eu. Vivamus lorem odio, pretium sed cursus ac, viverra et augue. Phasellus malesuada leo eros, sed pellentesque nulla dapibus sed. Duis ut faucibus turpis, sed dictum lacus.
+      </p>
+      <p>
+        Cras in felis at libero efficitur fermentum. Nunc accumsan vel mauris vel ultricies. Curabitur pulvinar dui quis enim vulputate ullamcorper. Proin fermentum nulla sit amet dolor porta, vitae tincidunt lacus rhoncus. Nunc eget feugiat tortor. In vel suscipit diam. Mauris quis metus ut eros euismod tempor. Ut in ultrices libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque quis mi ac turpis ultrices sodales.
+      </p>
+      <p>
+        Sed vel quam nulla. Quisque venenatis dui vel lectus consequat, non vestibulum risus pretium. Phasellus non dolor efficitur, bibendum nisl ac, imperdiet metus. Aenean elementum risus neque, sit amet sodales purus tincidunt vel. Donec euismod eu arcu vitae maximus. Morbi at consequat enim, in mattis quam. Nam eu purus elementum, dapibus metus id, cursus ipsum. Fusce ultricies pellentesque arcu. Sed eros purus, ullamcorper non pharetra nec, bibendum id arcu.
+      </p>
+    </section>
+    <div id="positioned">I'm positioned!
+      <span></span>
+    </div>
+    <div id="fixed"></div>
+  </body>
+</html>
