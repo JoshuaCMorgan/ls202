@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <!-- If you click anywhere inside the inner (blue) box, the box turns green; click again, and it becomes blue once again. Click elsewhere on the page (including on the light red area of the outer box (the margin of the inner box), and nothing happens. This behavior shows that the padding is part of the element, but the margin is not. -->
+  <style>
+    
+    section {
+      background-color: #ffc0c0;
+      border: 1px solid black;
+      height: 300px;
+      margin: 0;
+      padding: 0;
+      width: 300px;
+    }
+
+    article {
+      background-color: #c0c0ff;
+      border: 30px solid blue;
+      box-sizing: border-box;
+      height: 200px;
+      margin: 40px;
+      padding: 50px;
+      width: 200px;
+    }
+
+    /* The JavaScript code above turns this class on and off in the <article> */
+    .toggled {
+      background-color: #c0ffc0;
+      border: 30px solid green;
+    }
+  </style>
+
+  <script>
+    var article = {
+      toggleColor: function() {
+        document.querySelector('article').classList.toggle('toggled');
+      }
+    };
+  </script>
+
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <section>
+      <article onclick="article.toggleColor();">
+        Click here
+      </article>
+    </section>
+  </body>
+</html>

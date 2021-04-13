@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <style>
+   div {
+      background-color: lightgray;
+      border: 1px solid black;
+      box-sizing: border-box;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      /* the minimum width and height (in pixels) that the div needs to entirely contain the section element (including its margins)
+      /*  the section element is a block element, and since the div uses border-box box-sizing*/
+      width: 580px;
+      height: 360px;
+    }
+
+    section {
+      border: 4px solid red;
+      box-sizing: content-box;
+      display: block;
+      height: 300px;
+      margin: 20px 19px 10px 11px;
+      padding: 10px 20px;
+      width: 500px;
+    }
+    
+  </style>
+  <head>
+    <title>Blocks</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <div>
+      <section>content</section>
+    </div>
+  </body>
+</html>

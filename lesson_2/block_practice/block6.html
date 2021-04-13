@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <style>
+    section {
+      background-color: yellow;
+      border: 1px solid red;
+      box-sizing: content-box;
+      display: inline-block;
+      height: 400px;
+      margin: 0;
+      padding: 20px;
+      width: 900px;
+    }
+
+    article {
+      background-color: lime;
+      border: 1px solid blue;
+      /* box-sizing and inline-block are needed here to put these side-by-side */
+      box-sizing: border-box;
+      display: inline-block;
+      height: 100%;
+      margin: 0;
+      padding: 10px;
+      width: 50%;
+}
+  </style>
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <section>
+      <article>article</article><article>article2</article>
+    </section>
+
+    <section>
+      <article>article</article>
+      <article>article2</article>
+    </section>
+
+  </body>
+</html>
