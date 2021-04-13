@@ -14,7 +14,7 @@
   box-sizing: border-box;
   margin: auto;
   padding: 0;
-  display: inline-block;
+  /* display: inline-block; */
   width: 40%
 }
 
@@ -24,6 +24,6 @@
   box-sizing: border-box;
   margin: auto;
   padding: 0; 
-  display: inline-block;
+  /* display: inline-block; */
   width: 40%
 }
