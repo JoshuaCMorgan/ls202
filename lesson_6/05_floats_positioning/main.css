@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+.cf::before,
+.cf::after {
+  content: "";
+  display: block;
+}
+
+.cf::after {
+  clear: both;
+}
+
+body {
+  background-color: white;
+  color: #545459;
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+.container {
+  border: 2px solid #999;
+  margin: 0 auto;
+  padding: 20px;
+  width: 1000px;
+}
+
+section h1 {
+  font-size: 24px;
+}
+
+section h2 {
+  font-size: 20px;
+}
+
+section h3 {
+  font-size: 16px;
+}
+
+section h1,
+section h2,
+section h3 {
+  background-color: inherit; /* white */
+  color: #ce4a4a;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+section p {
+  line-height: 35px;
+  margin-bottom: 25px;
+}
+
+section .border {
+  border: 2px dashed #555;
+  margin: 45px;
+  padding: 30px;
+  width: 650px;
+}
+
+section .bold {
+  font-weight: bold;
+}
+
+section a {
+  background-color: inherit; /* white */
+  color: #333;
+  text-decoration: none;
+}
+
+section .inline-margin a {
+  margin: 30px;
+}
+
+section .inline-padding a {
+  background-color: green;
+  color: white;
+  padding: 30px;
+}
+
+section .inline-float a {
+  background-color: green;
+  border: 3px solid darkgreen;
+  color: white;
+  float: left;
+  margin: 15px;
+  padding: 25px;
+  text-align: center;
+  width: 120px;
+}
+
+/**** BLOCK ****/
+.block .wrapper {
+  margin-bottom: 35px;
+}
+
+.block .box-1 {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.block .box-2 {
+  background-color: green;
+  color: white;
+  height: 60px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.block .box-3 {
+  background-color: tomato;
+  color: white;
+  width: 90px;
+}
+
+.block .box-4 {
+  background-color: pink;
+  color: white;
+  height: 120px;
+  margin: 20px;
+  padding: 20px;
+  width: 180px;
+}
+
+.block .fl-1 {
+  background-color: dodgerblue;
+  border: 1px solid red;
+  color: white;
+  float: left;
+}
+
+.block .fl-2 {
+  background-color: tomato;
+  border: 1px solid red;
+  color: white;
+  float: right;
+}
+
+.block .fl-3 {
+  background-color: tomato;
+  color: white;
+  float: left;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  width: 40%;
+}
+
+.block .fl-4 {
+  background-color: dodgerblue;
+  color: white;
+  float: right;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  width: 50%;
+}
+
+.block .bl-a {
+  background-color: dodgerblue;
+  color: white;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.in-bl::after {
+  border-bottom: 2px dashed #545459;
+  content: "";
+  display: block;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.in-bl .nav {
+  text-align: center;
+}
+
+.in-bl .nav a {
+  background-color: dodgerblue;
+  border: 1px solid #1b95e0;
+  color: white;
+  display: inline-block;
+  margin: 20px 8px 25px;
+  padding: 20px 30px;
+  width: 180px;
+}
+
+.pos-fl h1 {
+  margin: 30px 0 25px;
+  text-align: center;
+}
+
+.pos-fl .flbx-1 {
+  background-color: tomato;
+  color: white;
+  float: left;
+  font-weight: bold;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 450px;
+}
+
+.pos-fl .flbx-2 {
+  background-color: dodgerblue;
+  color: white;
+  float: left;
+  font-weight: bold;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 505px;
+}
+
+.pos-fl .flbx-3 {
+  background-color: seagreen;
+  clear: both;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 35px;
+  text-align: center;
+  width: 955px;
+}
+
+.pos ul {
+  list-style-type: disc;
+  margin: 0 0 45px 40px;
+}
+
+.pos ul li {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.pos-fixed div {
+  background-color: dodgerblue;
+  border-radius: 10px;
+  bottom: 50px;
+  color: white;
+  left: 35px;
+  padding: 25px 35px;
+  position: fixed;
+  text-align: center;
+  width: 225px;
+}
+
+.pos-relative .rel-box {
+  background-color: tomato;
+  border-radius: 10px;
+  bottom: -45px;
+  color: white;
+  margin-bottom: 30px;
+  padding: 25px 35px;
+  position: relative;
+  right: 90px;
+  text-align: center;
+  width: 325px;
+}
+
+.pos-absolute {
+  position: relative;
+}
+
+.pos-absolute .abs-box1 {
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  left: 230px;
+  margin-bottom: 30px;
+  padding: 25px 35px;
+  position: absolute;
+  text-align: center;
+  top: -30px;
+  width: 200px;
+}
