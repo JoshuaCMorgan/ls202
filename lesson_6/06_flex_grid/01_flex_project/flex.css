@@ -1,0 +1,102 @@
+/*
+** This completed CSS file includes additional color and background-color
+** properties with an `inherit` value. These satisfy one of the W3C warnings
+** and aren't generally important except as documentation.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: white;
+  color: black;
+  font: normal 24px Helvetica, Arial, sans-serif;
+}
+
+header, h1 {
+  background-color: blue;
+  color: white;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  background-color: cyan;
+  color: inherit; /* no text - doesn't matter */
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+li {
+  text-align: center;
+  width: 20%;
+}
+
+a {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1rem 0;
+  text-decoration: none;
+  width: 100%;
+}
+
+a:focus,
+a:hover {
+  background-color: blue;
+  color: yellow;
+}
+
+main {
+  display: flex;
+}
+
+article,
+aside {
+  padding: 0 1rem;
+}
+
+article {
+  flex: 2;
+}
+
+aside {
+  background-color: lightgreen;
+  color: inherit; /* black */
+  flex: 1;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+footer {
+  align-items: center;
+  background-color: yellow;
+  color: inherit; /* black */
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+}
+
+#copyright {
+  margin: 0 1rem;
+}
+
+#logo {
+  background-color: orange;
+  color: inherit; /* no text - doesn't matter */
+}
+
+img {
+  display: block;
+  height: 200px;
+}

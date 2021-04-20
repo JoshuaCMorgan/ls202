@@ -1,0 +1,101 @@
+
+     * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      background-color: #151515;
+      color: #f0f0f0;
+      font: normal 16px Helvetica, Arial, sans-serif;
+    }
+
+    main {
+      background-color: #333;
+      color: inherit; /* #f0f0f0 */
+      box-sizing: border-box;
+      display: block;
+      margin: 0 auto;
+      max-width: 1000px;
+      padding: 25px 20px 20px;
+    }
+
+    h1 {
+      margin: 1.33rem 0;
+      text-align: center;
+    }
+
+    img {
+      box-sizing: border-box;
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+
+    figure {
+      margin: 0;
+      padding: 0 0 30px;
+    }
+
+    figure img {
+      border: 15px solid white;
+    }
+
+    figcaption {
+      display: block;
+      padding: 10px 0 0;
+    }
+
+    ul {
+      /* negative margin pushes content outward. This accomodates the outer padding on both of the outer images */
+      margin: 0 -15px;  
+      font-size: 0;
+      padding: 0;
+    }
+
+    li {
+      box-sizing: border-box;
+      display: inline-block;
+      margin-bottom: 15px;
+      padding: 0 15px;
+      vertical-align: top;
+      width: 25%;
+    }
+
+    li img {
+      border: 3px solid white;
+    }
+
+    /* Limit the number of thumbnails per line to three when the window width is less than 900px. */
+    @media screen and (max-width: 900px) {
+      li {
+        width: 33.3333%
+        }
+    }
+
+    /*  limit the number of thumbnails per line to two when the window width is less than 600px. */
+    @media screen and (max-width: 600px) {
+      li {
+        width: 50%;
+      }
+    }
+
+    /* Move the thumbnails to the right side of the primary photo when the browser's width is 1280 pixels or more.  */
+    @media screen and (min-width: 1280px) {
+      figure {
+        float: left;
+        width: 950px;
+      }
+      main {
+        max-width: 100%;
+      }
+      
+      ul {
+        overflow: hidden; 
+      }
+      li {
+        width: 100%;
+      }
+    }
+  

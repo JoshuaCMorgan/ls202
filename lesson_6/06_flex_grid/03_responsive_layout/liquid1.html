@@ -1,0 +1,64 @@
+<!-- No matter how we adjust the browser window's width, the two columns maintain their width ratios. Such synchronized behavior is the foundation of both liquid and fluid layouts.  -->
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <title>Example Liquid Layout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html {
+        font-size: 16px;
+      }
+
+      body, article, p {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: 0;
+        padding: 0.5rem;
+      }
+
+      main {
+        clear: both;
+        overflow: hidden;
+        padding-bottom: 1.5rem;
+      }
+
+      .content,
+      .sidebar {
+        box-sizing: border-box;
+        float: left;
+        padding: 20px 30px;
+      }
+
+      .content {
+        background-color: pink;
+        width: 70%;
+      }
+
+      .sidebar {
+        background-color: cyan;
+        width: 30%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <article class="content">
+        Enim Lorem aliqua anim nulla labore nulla ullamco. Deserunt fugiat duis ex
+        dolor. Ex laboris ad officia minim quis.  Incididunt eu reprehenderit
+        ullamco eiusmod dolor pariatur mollit qui. Officia aliqua velit deserunt
+        adipisicing duis minim minim tempor.
+      </article>
+    
+      <aside class="sidebar">
+        Proident cillum ad cillum minim magna. Duis nulla est est non sunt. Est
+        culpa laborum velit dolor.
+      </aside>
+    </main>
+  </body>
+</html>

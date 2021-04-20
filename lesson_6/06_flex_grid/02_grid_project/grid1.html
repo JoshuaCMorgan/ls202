@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8" />
+    <style>
+      ul {
+        padding: 0;
+      }
+
+      .row::after {
+        clear: both;
+        content: "";
+        display: block;
+        line-height: 0;
+      }
+
+      .one-sixth, .one-fourth, .one-third, .one-half {
+        display: inline-block;
+        float: left;
+        outline: 1px solid black;
+        text-align: center;
+        vertical-align: top;
+      }
+
+      .one-sixth {
+        width: 16.6667%;
+      }
+
+      .one-fourth {
+        width: 25%;
+      }
+
+      .one-third {
+        width: 33.3333%;
+      }
+
+      .one-half {
+        width: 50%;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <ul class="row">
+      <li class="one-half">1 of 2</li>
+      <li class="one-half">2 of 2</li>
+    </ul>
+    
+    <ul class="row">
+      <li class="one-third">1 of 3</li>
+      <li class="one-third">2 of 3</li>
+      <li class="one-third">3 of 3</li>
+    </ul>
+    
+    <ul class="row">
+      <li class="one-fourth">1 of 4</li>
+      <li class="one-fourth">2 of 4</li>
+      <li class="one-fourth">3 of 4</li>
+      <li class="one-fourth">4 of 4</li>
+    </ul>
+    
+    <ul class="row">
+      <li class="one-sixth">1 of 6</li>
+      <li class="one-sixth">2 of 6</li>
+      <li class="one-sixth">3 of 6</li>
+      <li class="one-sixth">4 of 6</li>
+      <li class="one-sixth">5 of 6</li>
+      <li class="one-sixth">6 of 6</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        outline: 1px solid red;
+      }
+      #layout {
+        display: grid;
+        grid-template-rows: [header-start] 100px [content-start] 400px [footer-start] 100px;
+        grid-template-columns: [ads] 200px [main] 1fr [links] 200px;
+        grid-template-areas: 
+          "header  header  header"
+          "ads     main    links"
+          "footer  footer  footer";
+        /** Shorthand property for gtr & gtc **/
+        /* grid: 100px 400px 100px / 200px 1fr 200px  */
+        /** Shorthand using custom line names **/
+        /* grid:
+          [header-start] "header header header" 100px 
+          [content-start] "ads main links" 400px 
+          [footer-start] "footer footer footer" 100px 
+          /[ads] 200px [main] 1fr [links] 200px; */
+        }
+        #one { grid-area: header; }
+        #two { grid-area: ads; }
+        #three { grid-area: main; }
+        #four { grid-area: links; }
+        #five {grid-area: footer; }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="layout">
+      <div id="one">One</div>
+      <div id="two">Two</div>
+      <div id="three">Three</div>
+      <div id="four">Four</div>
+      <div id="five">Five</div>
+    </div>
+  </body>
+</html>

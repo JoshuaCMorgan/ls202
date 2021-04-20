@@ -1,0 +1,131 @@
+/* This project does not use  any float, position, or flex properties, and doesn't convert any elements to inline-block. It uses only Grid features instead.
+
+Flex and Grid naturally work in concert. This contrived project intentionally restricts the use of Flex to force the use Grid. */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: white;
+  color: black;
+  font: normal 24px Helvetica, Arial, sans-serif;
+}
+
+body { 
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+  "header   header   header"
+  "navbar   navbar   navbar"
+  "sidebar1 article1 sidebar2"
+  "sidebar3 article2 article2"
+  "footer   footer   footer";
+}
+
+header, h1 {
+  background-color: blue;
+  color: white;
+}
+
+header {
+  grid-area: header;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav { 
+  background-color: cyan;
+  grid-area: navbar;
+ 
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+li {
+  text-align: center;
+  width: auto;
+}
+
+a {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1rem 0;
+  text-decoration: none;
+  width: 100%;
+}
+
+a:focus,
+a:hover {
+  background-color: blue;
+  color: yellow;
+}
+
+article,
+aside {
+  padding: 0 1rem;
+}
+
+ aside {
+  background-color: lightgreen;
+}
+
+#aside-1 {
+  grid-area: sidebar1;
+}
+
+#aside-2 {
+  grid-area: sidebar2;
+}
+
+#aside-3 {
+  background-color: pink;
+  grid-area: sidebar3; 
+}
+
+#article-1 {
+ grid-area: article1;
+}
+
+#article-2 {
+  background-color: skyblue;
+  grid-area: article2;
+} 
+
+p {
+  margin: 1rem 0;
+}
+
+ footer {
+  background-color: yellow;
+  display: grid;
+  grid-area: footer;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: 
+  "logo copyright";
+}
+
+#copyright {
+  margin: 0 1rem;
+  grid-area: copyright;
+  align-self: center;
+  justify-self: right;
+  
+}
+
+#logo {
+  background-color: orange;
+  grid-area: logo;
+}
+
+img {
+   width: 100%;
+   object-fit: cover;
+   display: block;
+}

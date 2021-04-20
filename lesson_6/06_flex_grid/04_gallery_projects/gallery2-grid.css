@@ -1,0 +1,144 @@
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      background-color: #0d0d0d;
+      color: gold;
+      font: bold 14px Helvetica, Arial, sans-serif;
+    }
+
+    /* Individual element styles */
+
+    figcaption {
+      margin-top: 5px;
+      text-align: center;
+    }
+
+    figure img {
+      border: 15px solid #1e3d7b;
+    }
+
+    h1 {
+      font-size: 26px;
+    }
+
+    img {
+      border: 1px solid #ffdd1a;
+      width: 100%;
+    }
+
+    /* Grid layout */
+
+    main {
+      background-color: #333333;
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-areas:
+        "header header"
+        "mainphoto mainphoto"
+        "thumb1 thumb2"
+        "thumb3 thumb4"
+        "thumb5 thumb6"
+        "thumb7 thumb8";
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+      grid-area: header;
+      text-align: center;
+    }
+
+    .main-photo {
+      grid-area: mainphoto;
+    }
+
+    .thumb1 {
+      grid-area: thumb1;
+    }
+
+    .thumb2 {
+      grid-area: thumb2;
+    }
+
+    .thumb3 {
+      grid-area: thumb3;
+    }
+
+    .thumb4 {
+      grid-area: thumb4;
+    }
+
+    .thumb5 {
+      grid-area: thumb5;
+    }
+
+    .thumb6 {
+      grid-area: thumb6;
+    }
+
+    .thumb7 {
+      grid-area: thumb7;
+    }
+
+    .thumb8 {
+      grid-area: thumb8;
+    }
+
+    /* Responsive design variations */
+
+    @media screen and (min-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      main {
+        grid-template-areas:
+          "header header header"
+          "mainphoto mainphoto mainphoto"
+          "thumb1 thumb2 thumb3"
+          "thumb4 thumb5 thumb6"
+          "thumb7 thumb8 .";
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      main {
+        grid-template-areas:
+          "header header header header"
+          "mainphoto mainphoto mainphoto mainphoto"
+          "thumb1 thumb2 thumb3 thumb4"
+          "thumb5 thumb6 thumb7 thumb8";
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      figcaption {
+        margin-top: 8px;
+        font-size: 16px;
+      }
+
+      .main-photo {
+        max-width: 950px;
+      }
+
+      main {
+        grid-template-areas:
+          "header header"
+          "mainphoto thumb1"
+          "mainphoto thumb2"
+          "mainphoto thumb3"
+          "mainphoto thumb4"
+          "mainphoto thumb5"
+          "mainphoto thumb6"
+          "mainphoto thumb7"
+          "mainphoto thumb8";
+        grid-template-columns: fit-content(950px) 1fr;
+      }
+    }

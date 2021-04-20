@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+     * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      background-color: #151515;
+      color: #f0f0f0;
+      font: normal 16px Helvetica, Arial, sans-serif;
+    }
+
+    main {
+      background-color: #333;
+      color: inherit; /* #f0f0f0 */
+      box-sizing: border-box;
+      display: block;
+      margin: 0 auto;
+      max-width: 1000px;
+      min-width: 500px;
+      padding: 25px 20px 20px;
+    }
+
+    h1 {
+      margin: 1.33rem 0;
+      text-align: center;
+    }
+
+    img {
+      box-sizing: border-box;
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+
+    figure {
+      margin: 0;
+      padding: 0 0 30px;
+    }
+
+    figure img {
+      border: 15px solid white;
+    }
+
+    figcaption {
+      display: block;
+      padding: 10px 0 0;
+    }
+
+    ul {
+      /* negative margin pushes content outward. This accomodates the outer padding on both of the outer images */
+      margin: 0 -15px;  
+      font-size: 0;
+      padding: 0;
+    }
+
+    li {
+      box-sizing: border-box;
+      display: inline-block;
+      margin-bottom: 30px;
+      padding: 0 15px;
+      vertical-align: top;
+      width: 25%;
+    }
+
+    li img {
+      border: 3px solid white;
+    }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>My Photo Gallery</h1>
+      <figure>
+        <img src="isla.jpg" alt="Isla Morgan" />
+        <figcaption>Example Photo</figcaption>
+      </figure>
+      <ul class="photo-gallery">
+        <li><img src="isla.jpg" alt="Isla Morgan"></li>
+        <li><img src="isla.jpg" alt="Isla Morgan"></li>
+        <li><img src="isla.jpg" alt="Isla Morgan"></li>
+        <li><img src="isla.jpg" alt="Isla Morgan"></li>
+      </ul>
+    </main>
+  </body>
+</html>
