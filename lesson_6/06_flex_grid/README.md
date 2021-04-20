@@ -1,8 +1,14 @@
 # Projects
 
-## Project 1
+## 01 Flex Project
+This uses Flex to layout a partially completed web page. It gives gives a general idea of how to use Flex.
+Flex and Grid naturally work in concert. This contrived project intentionally restricts the use of Grid to purposely use only Flex.
 
-## Gallery Projects
+## 02 Grid Project
+This project takes the same layout but instead of using Flex, it uses Grid only. 
+
+
+## 04 Gallery Projects
 ### Fluid Photo Gallery
 This project contains a single photo at the full width of the column, followed by four smaller thumbnail images in a single row below it. 
 All of these adjust their widths to take up the same percentage width no matter what the main gallery width is.
