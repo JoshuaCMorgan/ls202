@@ -7,4 +7,4 @@ The idea of this project is to replicate [the web-page design provided](site_des
   - [Digital Color Guide](https://support.apple.com/en-gb/guide/digital-color-meter/welcome/mac)
 
 Or, this project could be done using a PSD file via free online software:
-  -[Photopea](https://www.photopea.com/)
+  - [Photopea](https://www.photopea.com/)
