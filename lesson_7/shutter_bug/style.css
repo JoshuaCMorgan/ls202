@@ -1,0 +1,103 @@
+@import url("whitespace-reset.css");
+
+html {
+  font: normal 18px "Roboto Condensed", sans-serif;
+}
+
+body {
+  background-color: #d3ddc1;
+  background-image: linear-gradient(to bottom, #d1dbbd 0%, #fcfff5 100%);
+  /* shorthand */
+  /* background: #d3ddc1 linear-gradient(to bottom, #d1dbbd 0%, #fcfff5 100%); */
+  color: #3e606f;  /* this will change the color of all text in body */
+}
+
+header {
+  margin: 0 auto;
+  padding: 20px 20px 0;
+  width: 920px;
+}
+
+h1 {
+  background-image: url("logo.png");
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  /* shorthand */
+  /* background: transparent url("photo_blog_final_copy/logo.png") 0 0 no-repeat;  */
+  font-weight: normal;
+  float: left;
+  font-size: 36px;
+  color: #193441;
+  padding: 45px 0 15px 115px;
+ }
+
+nav {
+  float: right;
+  padding: 75px 0 0;
+}
+
+nav ul {
+  margin-bottom: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  background-color: #fcfff5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #91aa9d;
+  display: block;
+  padding: 10px 40px 14px;
+  text-decoration: none;
+}
+
+nav .active {
+  background-color: #91aa9d;
+  color: #fcfff5;
+}
+
+main {
+  background-color: white;
+  color: inherit; /* #3e606f */
+  box-shadow: 0 5px 5px #b5b5b5; 
+  box-sizing: border-box; 
+  clear: both; 
+  margin: 0 auto;
+  overflow: hidden;  /* This expands parent element to fit the floated element border */
+  padding: 30px;
+  width: 960px;
+}
+
+.masterhead {
+  /* Inline elements mainly deal with text. So, even if there is no text, the image will be treated as a text. */
+  /* This  below will remove the decendant space of text, which creates the bottom gap */
+  /* If you wrap the img in an element and add background color, you will see the gap.  */
+  display: block;   
+  margin: 0 0 40px;
+  width: 100%; 
+}
+h2 {
+  font-size: 32px;
+  font-weight: normal;
+  padding: 0 0 25px;
+}
+
+p {
+  padding: 0 0 20px;
+}
+
+figure {
+  float: right;
+  padding: 0 0 20px 30px;
+}
+
+footer {
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 960px;
+}
