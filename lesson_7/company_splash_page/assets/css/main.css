@@ -1,1 +1,65 @@
-@import url("whitespace-reset.css");
+html {
+  font: 400 20px "Nundito Sans";
+}
+
+body {
+  background-image:url(../images/bg_body.gif);
+  padding: 76px 0 50px 0;
+}
+
+header, main, footer {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 75px;
+  padding-left: 1px;
+}
+
+h2::after, h2::before {
+  content: "\2022";
+  font-size: 1.4rem;
+  padding: 0 26px 0 24px;
+  vertical-align: 5px;
+}
+
+h2 {
+  font: 600 36px "Nunito Sans";
+  letter-spacing: .5px;
+}
+h3 {
+  background-color: inherit; /* white */
+  color: #3e98b2;
+  font: 800 1.2rem "Nunito Sans", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.04rem;
+  margin: 20px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1, article {
+  text-align: center;
+}
+
+main {
+  background-color: white;
+  color: black;
+  margin-top: 94px;
+  padding-top: 70px;
+}
+
+article {
+  padding: 0 90px;
+}
+
+p {
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: grey;
+}
