@@ -6,7 +6,7 @@
       }
 
       body {
-        background: #2f2840 url("bg_body.gif");
+        background: #2f2840 url("../images/bg_body.gif");
         color: #45494d;
         padding: 75px 0 50px;
       }
@@ -78,14 +78,11 @@
       }
 
       ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
         margin: 0;
-        padding: 0;
-        text-align: center;
-      }
-
-      li {
-        display: inline;
-        padding: 0 58px;
+        padding: 0 182px;
       }
 
       a {
