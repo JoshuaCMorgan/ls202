@@ -1,0 +1,2 @@
+## Practice Project 1
+The goal was to reproduce [the following web page](https://web.archive.org/web/20201124213242/http://2014.jsconfbr.org/#sponsors) as closely as possible. As of Feb 2021, the above web page seems to have been taken down. In response to this change, the link references an archived version of the page at the Wayback Machine, which I used for the project.
