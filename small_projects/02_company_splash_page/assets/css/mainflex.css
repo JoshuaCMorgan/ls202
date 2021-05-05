@@ -1,0 +1,95 @@
+
+      html {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        font: 400 20px "Nunito Sans", Helvetica, Arial, sans-serif;
+      }
+
+      body {
+        background: #2f2840 url("../images/bg_body.gif");
+        color: #45494d;
+        padding: 75px 0 50px;
+      }
+
+      header,
+      main,
+      footer {
+        margin: 0 auto;
+        width: 1000px;
+      }
+
+      main {
+        background-color: white;
+        color: black;
+        margin-top: 44px;
+        padding: 70px 0;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 76px 0 0 1px;
+        padding: 0 0 50px;
+        text-align: center;
+      }
+
+      h2 {
+        font: 600 1.8rem "Nunito Sans", Helvetica, Arial, sans-serif;
+        letter-spacing: 0.5px;
+        margin-bottom: 0;
+      }
+
+      h2::before,
+      h2::after {
+        content: "\2022";
+        font-size: 1.4rem;
+        padding: 0 26px 0 24px;
+        vertical-align: 5px;
+      }
+
+      h3 {
+        background-color: inherit; /* white */
+        color: #3e98b2;
+        font: 800 1.2rem "Nunito Sans", Helvetica, Arial, sans-serif;
+        letter-spacing: 0.04rem;
+        margin: 20px;
+      }
+
+      article {
+        font-size: 1rem;
+        letter-spacing: 0.01rem;
+        margin-bottom: 158px;
+        padding: 0 90px 0px;
+      }
+
+      article + article {
+        margin-bottom: -5px;
+      }
+
+      p {
+        line-height: 28px;
+        margin: 22px 0 0;
+      }
+
+      footer {
+        background-color: #e7e7e7;
+        color: inherit; /* black */
+        margin-bottom: 85px;
+        padding: 33px 0;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin: 0;
+        padding: 0 182px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        vertical-align: middle;
+      }
+    
