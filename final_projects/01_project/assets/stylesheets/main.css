@@ -1,0 +1,361 @@
+@import url(whitespace-reset.css);
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-weight: normal;
+  text-align: center;
+}
+
+section {
+  border-top: 1px solid #efefef;
+  padding-bottom: 60px;
+}
+
+a[href] {
+  color:#444;
+  text-decoration: none;
+}
+
+a[href]:hover {
+  text-decoration: underline;
+}
+
+:any-link {
+  cursor: pointer;
+}
+
+section h1, footer h1 {
+  font-size: 48px;
+  font-weight: 100;
+  margin: 1.236em 0 .618em;
+}
+
+section h2 {
+  margin: 30px 0 4px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+section h3 {
+  font-size: 18px;
+  margin: 30px 0 4px;
+  font-weight: 600;
+}
+
+section p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  margin: 0 auto 17px;
+}
+
+main {
+  max-width: 960px;
+  min-width: 400px;
+  margin: 0 auto;
+}
+
+
+/*
+  ========================================
+  Header / Menu / Ticekts
+  ========================================
+*/
+#block {
+  min-height: 65px;
+}
+
+header {
+  position: relative;
+  background: url(../images/front.jpg) center no-repeat;
+  top: 55px;
+  margin-bottom: 55px;
+  text-align: center;
+  height: 428px;
+}
+
+header img {
+  display: inline-block;
+  margin-top: 150px;
+  width: 80px;
+  height: 80px;
+}
+header h2 {
+  color: white;
+  font-size: 31px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+header h1 {
+  font-size: 72px;
+  color: white;
+  position: relative;
+}
+
+#menu {
+  border-top: 10px solid#f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+}
+#menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  align-items: center;
+}
+
+#menu a {
+  line-height: 44px;
+}
+
+#menu li {
+  color: solid black;
+  padding: 0 26.75px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+#menu li:hover {
+  text-decoration: underline;
+}
+
+#tickets {
+  text-align: center;
+}
+
+.button[href] {
+  padding: 10px 30px;
+  color: #FFF;
+  background-color: green;
+  font-weight: bold;
+}
+
+.button[href]:hover {
+  text-decoration: none;
+  background-color: rgb(3, 87, 3);
+}
+
+/*
+========================================
+Speakers
+========================================
+*/
+
+#speakers {
+  margin: 0 30px;
+}
+#speakers ul{
+    display: grid;
+     margin: 0 auto;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
+    justify-content: center;
+  }
+  
+  #speakers figure {
+    width: 280px;
+    height: 230px;
+  } 
+  
+  
+  #speakers h2, #speakers p {
+    text-align: center;
+  }
+  
+  
+  #speakers li {
+    border: 1px solid #f3f3f3;
+    width: 280px;
+  } 
+
+   #speaker img {
+     display: block;
+    width: 280px;
+    height: 230px;
+  } 
+
+  [type="checkbox"] {
+    display: none;
+  }
+
+  
+  
+  /*
+  ========================================
+  Schedule
+  ========================================
+  */
+  #schedule a[href] {
+      color: green;
+  }
+  
+  @media (max-width: 654px) {
+    #schedule {
+      border-bottom: 1px solid #efefef;
+    }
+    
+    #schedule tr {
+      position: relative;
+      display: block;
+      border-top: 1px solid #EFEFEF;
+    }
+    
+    
+    #schedule td {
+      display: block;
+      border: none;
+    }
+    
+    #schedule th {
+      display: block;
+      text-align: right;
+      padding: 20px;
+      border: none;
+    }
+    
+    #pic {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80px;
+    }
+    
+  #pic img {
+    width: 80px;
+    height: 80px;
+    height: 67px;
+  }
+
+  #pic figure {
+    width: 80px;
+    height: 80px;
+  }
+
+}
+
+#schedule-grid {
+  margin: 0 30px;
+}
+
+
+#schedule h2 {
+  display: inline-block;
+  font-weight: 400;
+  margin: 0 10px 0 0;
+}
+
+#schedule h3 {
+  margin: 8px 0 0;
+}
+
+#schedule { 
+  max-width: 960px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  width: 100%; 
+}
+
+
+
+td figure {
+  height: 110px;
+  width: 130px;
+}
+
+td img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+table {
+  border-collapse: seperate;
+}
+
+th, td {
+  border-bottom: 2px solid #f7f7f7;
+  padding: 10px 10px;
+}
+
+th {
+  font-weight: 400;
+  font-size: 24px;
+  padding-right: 24px;
+}
+
+tfoot tr:last-child td {
+  border-bottom: 0;
+}
+
+/*
+  ========================================
+  Sponsors / Footer
+  ========================================
+  */
+
+  .platinum-sponsors {
+    
+      display: grid;
+       margin: 0 auto;
+      grid-gap: 15px;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
+      justify-content: start;
+    
+  }
+
+  footer {
+    background: url(../images/people.jpg) no-repeat center 23%;
+    background-size: cover;
+    /* text-align: center; */
+    height: 340px;
+  }
+
+  footer h1 {
+    margin: 0;
+    padding: 30px;
+    color: white;
+  }
+
+  footer h2 {
+    font-size: 31px;
+    text-transform: uppercase;
+  }
+
+  footer h2, footer p {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  footer p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 0 auto 17px;
+  }
+
+  .dark-background {
+    height: 170px;
+    border-top: none;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.616);
+  }
+
+  footer a[href] {
+    color: #008000;
+    font-weight: bold;
+}
