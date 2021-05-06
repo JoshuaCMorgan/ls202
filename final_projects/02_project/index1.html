@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo List</title>
+    <meta charset="utf-8" />
+    <link href="./css/main1.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <input type="checkbox" id="modal-clicker" />
+    <input type="checkbox" id="hamburger-clicker" />
+    <nav>
+      <ul>
+        <span class="header-ul-nav">
+          <img src="./images/all-todos.png" alt="all todos" />
+          <h2>All Todos</h2><label class="todo-count">18</label>
+        </span>
+        <li class="selected">
+          <a href="#">02/16</a><label class="todo-count">8</label>
+        </li>
+        <li>
+          <a href="#">03/16</a><label class="todo-count">2</label>
+        </li>
+        <li>
+          <a href="#">04/16</a><label class="todo-count">1</label>
+        </li>
+        <li>
+          <a href="#">05/16</a><label class="todo-count">1</label>
+        </li>
+        <li>
+          <a href="#">06/16</a><label class="todo-count">6</label>
+        </li>
+      </ul>
+      <ul class="completed">
+        <span class="header-ul-nav">
+          <img src="./images/done.png" alt="completed" />
+          <h2>Completed</h2>
+        </span>
+        <li>
+          <a href="#">02/15</a>
+        </li>
+        <li>
+          <a href="#">03/15</a>
+        </li>
+        <li>
+          <a href="#">04/15</a>
+        </li>
+        <li>
+          <a href="#">05/15</a>
+        </li>
+        <li>
+          <a href="#">06/14</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <span class="header-main">
+        <label id="hamburger" for="hamburger-clicker">
+          <img src="./images/hamburger.png" alt="hamburger" />
+        </label>
+        <h1 id="date">02/16</h1>
+        <label class="todo-count selected">8</label>
+      </span>
+      <ul>
+        <li class="header-ul-main">
+          <img src="./images/plus.png" alt="plus" />
+          <label class="alt-text-color">Add new to do</label>
+        </li>
+        <label class="modal-clicker" for="modal-clicker">
+          <li>
+            <img src="./images/unticked-box.png" alt="unticked box" />
+            <label for="modal-clicker">Item 1</label>
+            <img class="float-right" src="./images/trash.png" alt="trash" />
+          </li>
+        </label>
+        <li>
+          <img src="./images/unticked-box.png" alt="unticked box" />
+          <label>Item 2</label>
+          <img class="float-right" src="./images/trash.png" alt="trash" />
+        </li>
+        <li class="completed">
+          <img src="./images/ticked-box.png" alt="ticked box" />
+          <label>Item 3</label>
+          <img class="float-right" src="./images/trash.png" alt="trash" />
+        </li>
+        <li class="completed">
+          <img src="./images/ticked-box.png" alt="ticked box" />
+          <label>Item 4</label>
+          <img class="float-right" src="./images/trash.png" alt="trash" />
+        </li>
+        <li class="completed">
+          <img src="./images/ticked-box.png" alt="ticked box" />
+          <label>Item 5</label>
+          <img class="float-right" src="./images/trash.png" alt="trash" />
+        </li>
+        <li>
+          <img src="./images/unticked-box.png" alt="unticked box" />
+          <label>Item 6</label>
+          <img class="float-right" src="./images/trash.png" alt="trash" />
+        </li>
+        <li>
+          <img src="./images/unticked-box.png" alt="unticked box" />
+          <label>Item 7</label>
+          <img class="float-right" src="./images/trash.png" alt="trash" />
+        </li>
+        <li>
+          <img src="./images/unticked-box.png" alt="unticked box" />
+          <label>Item 8</label>
+          <img class="float-right" src="./images/trash.png" alt="trash" />
+        </li>
+        <li>
+          <img src="./images/unticked-box.png" alt="unticked box" />
+          <label>Item 9</label>
+          <img class="float-right" src="./images/trash.png" alt="trash" />
+        </li>
+      </ul>
+      <div class="modal">
+        <form action="" method="post">
+          <label class="title-label">Title</label>
+          <input class="title-input" type="text" value="Item 1" />
+          <label class="date-label">Due Date</label>
+          <div class="date-inputs">
+            <input type="number" min="1" max="31" placeholder="Day" value="16" />
+            <span> / </span>
+            <input type="number" min="1" max="12"placeholder="Month" />
+            <span> / </span>
+            <input type="number" min="2020" placeholder="Year" />
+          </div>
+          <label class="desc-label">Description</label>
+          <textarea class="desc-input" placeholder="Description" rows="7"></textarea>
+          <div class="buttons">
+            <button>Save</button>
+            <button>Mark As Complete</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <div class="overlay"></div>
+  </body>
+</html>
